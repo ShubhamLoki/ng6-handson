@@ -1,0 +1,12 @@
+<ul>
+  <li class="dropdown" *ngFor="let x of menuBar">
+    <a class="dropbtn">{{x.name}}</a>
+    <div class="dropdown-content">
+      <a href="#" class="dropbtn_sub" *ngFor="let sub of x.submenu" (click)="alertme(sub.name)">{{sub.name}}</a>
+      <!-- <div class="dropdown-content_sub">
+        <a href="#" *ngFor="let sub2 of sub.submenu">{{sub2.name}}</a>
+      </div> -->
+    </div>
+  </li>
+
+</ul>
